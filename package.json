@@ -1,0 +1,39 @@
+{
+    "name": "codebashers-component-library",
+    "version": "1.0.0",
+    "description": "codebashers react component library",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Suryac72/codebasher-react-library.git"
+    },
+    "main": "dist/cjs/index.js",
+    "module": "dist/esm/index.js",
+    "files": [
+        "dist",
+        "README.md"
+    ],
+    "scripts": {
+        "build": "rm -rf dist/ && prettier --write src/ && npm run build:esm && npm run build:cjs",
+        "build:esm": "tsc",
+        "build:cjs": "tsc --module CommonJS --outDir dist/cjs",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Surya Prakash Chaudhary",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/node": "^20.5.7",
+        "@types/react": "^18.2.21",
+        "@types/react-dom": "^18.2.7",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "tailwindcss": "^3.3.3",
+        "typescript": "^5.2.2"
+    },
+    "peerDependencies": {
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    },
+    "dependencies": {
+        "prettier": "^3.0.2"
+    }
+}
