@@ -5,8 +5,6 @@ interface ButtonProps {
     buttonText: string;
     buttonIcon?: string;
 }
-const Button = (buttonProps: ButtonProps) => {
+export const Button = (buttonProps: ButtonProps) => {
     return <button className={buttonProps.className}>{buttonProps.buttonText}</button>;
 };
-
-export default Button;
