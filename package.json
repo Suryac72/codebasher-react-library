@@ -1,10 +1,10 @@
 {
-    "name": "codebashers-component-library",
+    "name": "@codebashers-component-library",
     "version": "1.0.1",
     "description": "codebashers react component library",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Suryac72/codebasher-react-library.git"
+        "url": "https://github.com/Suryac72/codebasher-react-library.git"
     },
     "main": "dist/cjs/index.js",
     "module": "dist/esm/index.js",
