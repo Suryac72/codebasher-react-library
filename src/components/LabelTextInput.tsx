@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface LabelTextInputProps {
+export interface LabelTextInputProps {
     labelText: string;
     inputPlaceholder?: string;
     className?: string;
@@ -12,7 +12,7 @@ interface LabelTextInputProps {
     inputName: string;
     componentClassName?: string;
 }
-const LabelTextInput = (labelTextInputProps: LabelTextInputProps) => {
+export const LabelTextInput = (labelTextInputProps: LabelTextInputProps) => {
     return labelTextInputProps.className ? (
         <div className={labelTextInputProps.componentClassName}>
             <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
@@ -49,5 +49,3 @@ const LabelTextInput = (labelTextInputProps: LabelTextInputProps) => {
         </div>
     );
 };
-
-export default LabelTextInput;
